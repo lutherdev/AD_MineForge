@@ -91,7 +91,6 @@ input[type="password"]:focus {
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* NEW FOR COMMIT 5 */
 .login-title {
   font-family: 'MedievalSharp', cursive;
   color: #5c3a21;
