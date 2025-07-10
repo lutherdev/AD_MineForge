@@ -20,6 +20,14 @@ function footer() {
                 <li><a href="#"><i class="icon">🎥</i>Youtube</a></li>
             </ul>
         </div>
+
+        <div class="footer-column">
+            <h3>CONTACT THE GUILD</h3>
+            <ul>
+                <li><a href="contact-us">Send a Raven</a></li>
+                <li><a href="contact-us">Find Our Forge</a></li>
+            </ul>
+        </div>
     </div>
 </footer>
     <?php
