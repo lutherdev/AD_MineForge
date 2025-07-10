@@ -54,3 +54,30 @@
     color: #d4af37;
     border-bottom: 2px solid #d4af37;
 }
+
+.dropdown-title {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: #f0e6d2;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(30,15,15,0.95);
+    border: 1px solid #d4af37;
+    min-width: 200px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    font-family: 'Book Antiqua', serif;
+    color: #f0e6d2;
+}
+
+.navbar-item.dropdown:hover .dropdown-content {
+    display: block;
+}
