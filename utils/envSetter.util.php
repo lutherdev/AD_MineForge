@@ -12,3 +12,13 @@ $dbConfig = [
     'pgUser' => $_ENV['PG_USER'],
     'pgPassword' => $_ENV['PG_PASS'],
 ];
+
+$runningInsideDocker = file_exists('/.dockerenv');
+
+if ($runningInsideDocker) {
+    $databases['pg_host'] = $_ENV['PG_HOST'] = 'host.docker.internal'; 
+    $databases['pg_port'] = $_ENV['PG_PORT'] = '3333';
+} else {
+    $databases['pg_host'] = $_ENV['PG_HOST'] = 'localhost';
+    $databases['pg_port'] = $_ENV['PG_PORT'] = '3333';
+}
