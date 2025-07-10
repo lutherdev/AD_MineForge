@@ -37,3 +37,12 @@
     color: #e0e0e0;
     text-decoration: none;
 }
+
+.footer-column a:hover {
+    color: #d4af37;
+    transition: color 0.3s;
+}
+
+.footer-column .icon {
+    margin-right: 8px;
+}
