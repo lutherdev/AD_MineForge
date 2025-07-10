@@ -1,7 +1,7 @@
 <?php
 function footer() {
     ?>
-    <link rel="stylesheet" href="/assets/css/foot.component.css"
+    <link rel="stylesheet" href="/assets/css/foot.component.css">
     <footer class="mineforge-footer">
         <div class="footer-grid">
             <div class="footer-column">
