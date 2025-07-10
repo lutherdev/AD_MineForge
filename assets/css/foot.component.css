@@ -1,0 +1,16 @@
+.mineforge-footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 2rem 0;
+    font-family: 'Georgia', serif;
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
