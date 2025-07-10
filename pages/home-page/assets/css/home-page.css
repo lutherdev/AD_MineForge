@@ -1,11 +1,13 @@
 .homepage-container {
     background: linear-gradient(rgba(11, 6, 6, 0.9), rgba(30,15,15,0.9));
     color: #f0e6d2;
+    overflow-x: hidden;
 }
 
 .hero-section {
     position: relative;
     height: 100vh;
+    
 }
 
 .hero-carousel {
@@ -73,19 +75,43 @@
     flex-wrap: wrap;
 }
 
-.btn-gold, .btn-outline {
+.btn-gold {
+    background:#D4Af37;
+    color: #3a2a0e;
     padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
     font-family: 'MedievalSharp', cursive;
+    font-size: 1.1rem;
+    transition: all 0.3 ease;
+    text-shadow: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.btn-gold:hover, .btn-outline:hover {
+.btn-outline {
+    background:transparent;
+    color: #D4Af37;
+    padding: 0.75rem 2rem;
+    border: 2px solid #D4Af37;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.1rem;
+    transition: all 0.3 ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-gold:hover {
+    background-color: #c19b2e;
     transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 
-.intro-container {
-    padding: 4rem 1rem;
-    text-align: center;
+.btn-outline:hover {
+    background: rgba(212,175,55,0.1);
+    transform: translateY(-3px);
 }
 
 .intro-title {
