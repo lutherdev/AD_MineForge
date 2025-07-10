@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: 'MedievalSharp', cursive;
+  background: url(/pages/store/assets/img/storeBG.png);
+  color: #333;
+}
+
+.store-container {
+  padding: 40px 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.store-header {
+  text-align: center;
+}
+
+.store-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #836855;
+}
+
+.store-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.menu-btn {
+  background: #b0843f;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-btn:hover,
+.menu-btn.active {
+  background: #5a4231;
+}
+
+.store-main {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+  width: 260px;
+}
+
+.cart-image-wrapper {
+  background-image: url('/pages/store/assets/img/cartBG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid #5a4231;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-box,
+.cart-box2 {
+  background: none;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.cart-box h2,
+.cart-box2 h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #5a4231;
+}
+
+.cart-box ul,
+.cart-box2 ul {
+  list-style: none;
+  padding: 3%;
+  margin: 0;
+}
+
+.cart-box li,
+.cart-box2 li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.cart-box .total,
+.cart-box2 .total {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #3a9c36;
+}
+
+.cart-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-cancel button {
+  background: #5f4926;
+  border: none;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-cancel button:hover {
+  background: #a3551e;
+}
+
+.products-image-wrapper {
+  background-image: url('/pages/store/assets/img/menuBG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 850px;
+  overflow-y: auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.products-grid {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
