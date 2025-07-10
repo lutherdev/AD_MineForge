@@ -50,3 +50,15 @@
 .footer-column .icon {
     margin-right: 8px;
 }
+
+.footer-bottom {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid #5c4d3c;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.footer-bottom strong {
+    color: #d4af37;
+}
