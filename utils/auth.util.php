@@ -16,7 +16,14 @@ class Auth{
             return false;
         }
 
-        $_SESSION['user'] = $user;
+        $_SESSION['user'] = [
+            'id' => $user['id'],
+            'username' => $user['username'],
+            'role' => $user['role'],
+            'firstname' => $user['first_name'],
+            'lastname' => $user['last_name'],
+        ]; 
+
         return true;
     }
 
