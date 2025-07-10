@@ -1,5 +1,8 @@
 <?php
-define('BASE_PATH', realpath(__DIR__));
+if (!defined('BASE_PATH')) {
+    define('BASE_PATH', dirname(_DIR_));
+}
+
 define('UTILS_PATH', BASE_PATH . '/utils');
 define('STATICDATAS_PATH', BASE_PATH . '/staticDatas');
 define('SQL_PATH', BASE_PATH . '/sql');
