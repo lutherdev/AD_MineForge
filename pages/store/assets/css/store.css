@@ -41,9 +41,13 @@ body {
   transition: 0.3s;
 }
 
-.menu-btn:hover,
+.menu-btn:hover {
+  background: #5a4231;
+}
+
 .menu-btn.active {
   background: #5a4231;
+  color: white;
 }
 
 .store-main {
@@ -81,6 +85,7 @@ body {
   padding: 0;
   border: none;
   box-shadow: none;
+  
 }
 
 .cart-box h2,
@@ -89,6 +94,28 @@ body {
   font-size: 1.4rem;
   margin-bottom: 15px;
   color: #5a4231;
+}
+
+#cart-items{
+  overflow-y: scroll;
+  min-height: 250px;
+  max-height: 250px;
+}
+
+#cart-items::-webkit-scrollbar {
+  width: 13px;
+}
+
+#cart-items::-webkit-scrollbar-track {
+  background-color: #38301d;
+}
+
+.cart-box2::-webkit-scrollbar {
+  width: 13px;
+}
+
+.cart-box2::-webkit-scrollbar-track {
+  background-color: #38301d;
 }
 
 .cart-box ul,
@@ -116,13 +143,13 @@ body {
   color: #3a9c36;
 }
 
-.cart-buttons {
+.cart-buttons{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.btn-cancel button {
+.btn-cancel button{
   background: #5f4926;
   border: none;
   color: black;
@@ -137,6 +164,7 @@ body {
   background: #a3551e;
 }
 
+
 .products-image-wrapper {
   background-image: url('/pages/store/assets/img/menuBG.png');
   background-repeat: no-repeat;
@@ -149,15 +177,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  border: 5px solid red;
   box-sizing: border-box;
+}
+
+.products-image-wrapper::-webkit-scrollbar{
+  width: 13px;
+}
+
+.products-image-wrapper::-webkit-scrollbar{
+  background-color: #38301d;
 }
 
 .products-grid {
   flex: 1;
   display: flex;
+  flex-direction: row; /* sdomsdoasmda */
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  justify-content: center; 
+  border: 5px solid red;
 }
 
 .product-card {
