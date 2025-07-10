@@ -1,6 +1,7 @@
 <?php
 function footer() {
     ?>
+    <link rel="stylesheet" href="/assets/css/foot.component.css">
     <footer class="mineforge-footer">
         <div class="footer-grid">
         <div class="footer-column">
@@ -18,9 +19,16 @@ function footer() {
                 <li><a href="#"><i class="icon">⚔️</i>Twitter/X</a></li>
                 <li><a href="#"><i class="icon">🎥</i>Youtube</a></li>
             </ul>
-</div>
         </div>
-    </footer>
+        <div class="footer-column">
+            <h3>CONTACT THE GUILD</h3>
+            <ul>
+                <li><a href="contact-us">Send a Raven</a></li>
+                <li><a href="contact-us">Find Our Forge</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
     <?php
 }
 ?>
