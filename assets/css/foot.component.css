@@ -61,3 +61,14 @@
 .footer-bottom strong {
     color: #d4af37;
 }
+
+@media (max-width: 600px) {
+    .footer-grid {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .footer-column {
+        text-align: center;
+    }
+}
