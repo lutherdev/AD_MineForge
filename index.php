@@ -4,7 +4,7 @@ require_once "bootstrap.php";
 $uri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), "/");
 
 if ($uri === "") {
-    $folder = "homepage";
+    $folder = "home-page";
 } else {
     $folder = $uri;
 }
