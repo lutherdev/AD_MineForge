@@ -47,4 +47,4 @@
          </div>
     </nav>
     
-        <script src="../assets/js/nav.js" defer></script>
+        <script src="../assets/js/navbar.js" defer></script>
