@@ -7,10 +7,44 @@ class Auth{
         }
     }
 
+    public static function attempt(PDO $pdo, string $username, string $password): bool {
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
+        $stmt->execute([':username' => $username]);
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if (!$user || !password_verify($password, $user['password'])) {
+            return false;
+        }
+
+        $_SESSION['user'] = $user;
+        return true;
+    }
+
+    public static function logout(): void
+    {
+        $_SESSION = [];
+        if (ini_get("session.use_cookies")) {
+            $params = session_get_cookie_params();
+            setcookie(
+                session_name(),
+                '',
+                time() - 42000,
+                $params["path"],
+                $params["domain"],
+                $params["secure"],
+                $params["httponly"]
+            );
+        }
+        session_destroy();
+    }
+
     public static function user(): ?array
     {
         return $_SESSION['user'] ?? null;
     }
 
-    
+    public static function check()
+    {
+        return isset($_SESSION['user']);
+    }
 }
