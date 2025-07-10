@@ -22,8 +22,52 @@ body {
   width: 100%;
   max-width: 400px;
 }
+
 .error {
   color: red;
   margin-top: 10px;
   text-align: center;
+}
+
+/* NEW for Commit 3 */
+.form-label {
+  display: block;
+  color: #5c3a21;
+  font-family: 'MedievalSharp', cursive;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.8rem;
+  background: rgba(255,253,240,0.7);
+  border: 1px solid #c0a88a;
+  border-radius: 3px;
+  font-family: 'Book Antiqua', serif;
+  color: #4a3728;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 5px rgba(212,175,55,0.5);
+}
+
+/* Optional: support for general input styling */
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: none;
+  border-bottom: 2px solid #4a3728;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom-color: #d4af37;
 }
