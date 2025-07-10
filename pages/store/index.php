@@ -1,4 +1,7 @@
-<!-- store.php -->
+<?php
+require_once STATICDATAS_PATH . '/dummies/store.staticData.php';
+?>
+
 <section class="store-container" id="inventory">
   <div class="store-header">
     <h1>Miner's Ware</h1>
@@ -37,23 +40,21 @@
     </div>
 
     <div class="products-image-wrapper">
-      <div class="products-image-wrapper">
-  <div class="products-grid">
-    <?php foreach ($products as $product): ?>
-      <div class="product-card" data-category="<?= strtolower($product['category']) ?>">
-        <img src="<?= $product['image'] ?>" alt="<?= $product['name'] ?>">
-        <div class="product-info">
-          <h3><?= $product['name'] ?></h3>
-          <p><?= $product['description'] ?></p>
-          <div class="price-action">
-            <span class="price">₱<?= $product['price'] ?></span>
-            <button onclick="addToCart('<?= $product['name'] ?>', <?= $product['price'] ?>, '<?= strtolower($product['category']) ?>')">Add to Cart</button>
+      <div class="products-grid">
+        <?php foreach ($products as $product): ?>
+          <div class="product-card" data-category="<?= strtolower($product['category']) ?>">
+            <img src="<?= $product['image'] ?>" alt="<?= $product['name'] ?>">
+            <div class="product-info">
+              <h3><?= $product['name'] ?></h3>
+              <p><?= $product['description'] ?></p>
+              <div class="price-action">
+                <span class="price">₱<?= $product['price'] ?></span>
+                <button onclick="addToCart('<?= $product['name'] ?>', <?= $product['price'] ?>, '<?= strtolower($product['category']) ?>')">Add to Cart</button>
+              </div>
+            </div>
           </div>
-        </div>
+        <?php endforeach; ?>
       </div>
-    <?php endforeach; ?>
-  </div>
-</div>
     </div>
   </div>
 </section>
