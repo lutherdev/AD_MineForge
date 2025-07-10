@@ -52,6 +52,16 @@ try {
         $role = $_POST['role'];
         $wallet = $_POST['wallet'];
         $rawPassword = $_POST['password'];
+        if (!preg_match('/^[a-zA-Z0-9_]{3,20}$/', $username)) {
+        header("Location: /register?error=invalid_username");
+        exit;
+        }       
+
+        if (!preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/', $password)) {
+            header("Location: /register?error=weak_password");
+            exit;
+        }
+
         $hashedPassword = password_hash($rawPassword, PASSWORD_DEFAULT);
 
         $stmt = $pdo->prepare("INSERT INTO users (username, password, first_name, last_name, role, wallet) VALUES (:username, :password, :firstname, :lastname, :role, :wallet)");
