@@ -31,3 +31,26 @@
     font-size: 1.5rem;
     margin-left: 0.8rem;
 }
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar-item {
+    padding: 0.5rem 1rem;
+    color: #f0e6d2;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    color: #d4af37;
+}
+
+.navbar-item.is-active {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
