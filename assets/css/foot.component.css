@@ -46,3 +46,12 @@
 .footer-column .icon {
     margin-right: 8px;
 }
+
+.footer-column h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mineforge-footer {
+    border-top: 2px solid #d4af37;
+}
