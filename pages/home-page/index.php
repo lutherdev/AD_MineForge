@@ -1,7 +1,5 @@
 <?php
-require_once BASE_PATH . 'bootstrap.php';
-$homePageCss = PAGES_PATH . '/home-page/assets/css/home-page.css';
-
+require_once BASE_PATH . '/bootstrap.php';
 $carousel_items = [
   [
     'src' => 'carousel1.jpg',
@@ -16,6 +14,8 @@ $carousel_items = [
     'alt' => "MineForge's Hall",
   ]
 ];
+
+$homePageCss = '/pages/home-page/assets/css/home-page.css';
 ?>
 
 <link rel="stylesheet" href="<?= htmlspecialchars($homePageCss) ?>">
@@ -37,6 +37,18 @@ $carousel_items = [
         <a href="store" class="btn-gold">Browse Our Wares</a>
         <a href="aboutUs" class="btn-outline">Learn Our History</a>
       </div>
+    </div>
+  </section>
+  <section class="intro-container">
+    <div class="intro-content">
+        <h2 class="intro-title">MineForge's Legacy</h2>
+        <div class="intro-divider"></div>
+        <p class="intro-text">
+      Forged in the depths of the Sword Coast mountains, MineForge has supplied Baldur's Gate
+      with premium metals and minerals since 1357 DR. Our dwarven-crafted wares are
+      unearthed through ancient techniques perfected over centuries.
+        </p>
+        <div class="intro-icon">⚒️</div>
     </div>
   </section>
 </main>
