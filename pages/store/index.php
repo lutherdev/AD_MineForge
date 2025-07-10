@@ -1,5 +1,5 @@
 <?php
-require_once STATICDATAS_PATH . '/dummies/store.staticData.php';
+require_once STATICDATAS_PATH . '/dummies/items.staticData.php';
 ?>
 
 <section class="store-container" id="inventory">
