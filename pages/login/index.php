@@ -20,6 +20,11 @@ $error = $_GET['error'] ?? '';
 
       <input type="hidden" name="action" value="login">
       <button type="submit" class="login-btn">Enter The Mines</button>
+
+      <?php if (!empty($error)): ?>
+        <p class="error"><?= htmlspecialchars($error) ?></p>
+      <?php endif; ?>
+      
     </form>
   </div>
 </div>
