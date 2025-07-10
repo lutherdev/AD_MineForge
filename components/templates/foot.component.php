@@ -29,6 +29,10 @@ function footer() {
             </ul>
         </div>
     </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 <strong>MineForge</strong>. All ores reserved. Mined and forged in the mountains of <em>Sword Coast</em>.</p>
+    </div>
 </footer>
     <?php
 }
