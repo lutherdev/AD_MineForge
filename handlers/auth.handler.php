@@ -44,6 +44,34 @@ try {
         }
     }
 
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['action'] === 'register') {
+    
+        $username = $_POST['username'];
+        $firstname = $_POST['firstname'];
+        $lastname = $_POST['lastname'];
+        $role = $_POST['role'];
+        $wallet = $_POST['wallet'];
+        $rawPassword = $_POST['password'];
+        $hashedPassword = password_hash($rawPassword, PASSWORD_DEFAULT);
+
+        $stmt = $pdo->prepare("INSERT INTO users (username, password, first_name, last_name, role, wallet) VALUES (:username, :password, :firstname, :lastname, :role, :wallet)");
+        $stmt->execute([
+            ':username' => $username,
+            ':password' => $hashedPassword,
+            ':firstname' => $firstname,
+            ':lastname' => $lastname,
+            ':role' => $role,
+            ':wallet' => $wallet
+        ]);
+
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
+        $stmt->execute([':username' => $username]);
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        Auth::sessionSet($user);
+        header("Location: /");
+        exit;
+    }
+
 }   catch (Exception $e) {
 echo "❌ ERROR: " . $e->getMessage() . "\n";
 exit(255);
