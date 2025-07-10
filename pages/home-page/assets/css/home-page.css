@@ -65,3 +65,19 @@
     font-family: 'MedievalSharp', cursive;
 }
 
+.intro-container {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.intro-title {
+    font-family: 'MedievalSharp', cursive;
+    color: #D4Af37;
+}
+
+.intro-divider {
+    width: 13rem;
+    height: 0.125rem;
+    background: #D4Af37;
+    margin: 1em auto;
+}
