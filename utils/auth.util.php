@@ -7,15 +7,7 @@ class Auth{
         }
     }
 
-    public static function attempt(PDO $pdo, string $username, string $password): bool {
-        $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
-        $stmt->execute([':username' => $username]);
-        $user = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        if (!$user || !password_verify($password, $user['password'])) {
-            return false;
-        }
-
+    public static function sessionSet($user){
         $_SESSION['user'] = [
             'id' => $user['id'],
             'username' => $user['username'],
@@ -23,8 +15,19 @@ class Auth{
             'firstname' => $user['first_name'],
             'lastname' => $user['last_name'],
         ]; 
-
-        return true;
+    }
+    public static function attempt(PDO $pdo, string $username, string $password){
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
+        $stmt->execute([':username' => $username]);
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (!$user) {
+            return 'invalid_username';
+        }
+        if (!password_verify($password, $user['password'])){
+            return 'invalid_password';
+        }
+        self::sessionSet($user);
+        return 'success';
     }
 
     public static function logout(): void
