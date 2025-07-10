@@ -4,7 +4,6 @@
     padding: 2rem 0;
     font-family: 'Georgia', serif;
     border-top: 2px solid #d4af37;
-
 }
 
 .footer-grid {
@@ -24,6 +23,8 @@
     color: #d4af37;
     font-size: 1.1rem;
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .footer-column ul {
