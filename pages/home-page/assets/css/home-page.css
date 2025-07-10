@@ -1,0 +1,33 @@
+.homepage-container {
+    background: linear-gradient(rgba(11, 6, 6, 0.9), rgba(30,15,15,0.9));
+    color: #f0e6d2;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-family: 'MedievalSharp', cursive;
+    color: #D4Af37;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.btn-gold, .btn-outline {
+    padding: 0.75rem 2rem;
+    font-family: 'MedievalSharp', cursive;
+}
