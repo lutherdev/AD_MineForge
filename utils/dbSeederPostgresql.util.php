@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 require_once BASE_PATH . '/bootstrap.php';
 
-$users = require_once DUMMIES_PATH . '/users.staticData.php';
+require_once DUMMIES_PATH . '/users.staticData.php';
+require_once DUMMIES_PATH . '/items.staticData.php';
 
 $dsn = "pgsql:host={$dbConfig['pgHost']};port={$dbConfig['pgPort']};dbname={$dbConfig['pgDB']}";
 
@@ -50,6 +51,37 @@ try {
 
     echo "All users seeded.\n\n";
 
+
+    echo "Seeding items…\n";
+
+    $pdo->beginTransaction();
+
+    $stmt = $pdo->prepare("
+        INSERT INTO items (item_name, price, description, quantity, category, status)
+        VALUES (:item_name, :price, :description, :quantity, :category, :status)
+    ");
+
+    foreach ($products as $item) {
+        try {
+            $stmt->execute([
+                ':item_name'    => $item['name'],
+                ':price'        => $item['price'],
+                ':description'  => $item['description'],
+                ':quantity'     => $item['quantity'],
+                ':category'     => $item['category'],
+                ':status'       => $item['status'],
+            ]);
+            echo "Inserted item: {$item['name']}\n";
+        } catch (PDOException $e) {
+            echo "Failed to insert {$item['name']}: " . $e->getMessage() . "\n";
+        }
+    }
+
+    $pdo->commit();
+
+    echo "All items seeded.\n\n";
+
+
     $stmt = $pdo->query("SELECT * FROM users");
     $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -60,6 +92,21 @@ try {
         echo "First Name: {$user['first_name']}\n";
         echo "Last Name:  {$user['last_name']}\n";
         echo "Role:       {$user['role']}\n";
+        echo "Wallet:     {$user['role']}\n";
+        echo "---------------------------\n";
+    }
+
+    $stmt = $pdo->query("SELECT * FROM items");
+    $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    foreach ($items as $item) {
+        echo "---------------------------\n";
+        echo "Item Name:    {$item['name']}\n";
+        echo "Price:   {$item['price']}\n";
+        echo "Description: {$item['description']}\n";
+        echo "Quantity:  {$item['quantity']}\n";
+        echo "Category:       {$item['category']}\n";
+        echo "Status:     {$item['status']}\n";
         echo "---------------------------\n";
     }
 
