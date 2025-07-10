@@ -213,3 +213,18 @@ body {
   color: #1c4e1b;
   font-weight: bold;
 }
+
+.price-action button {
+  background: #5f4926;
+  border: none;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.price-action button:hover {
+  background: #a3551e;
+}
