@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  background: linear-gradient(rgba(11,6,6,0.9), rgba(30,15,15,0.9)),
+  url('/pages/login/assets/img/underdark.jpg') center/cover;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.parchment-login {
+  background: linear-gradient(rgba(242,227,197,0.9), rgba(242,227,197,0.9)),
+  url('../img/parchment-bg.jpg') center/cover;
+  padding: 3rem;
+  border-radius: 5px;
+  border: 2px solid #d4af37;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  width: 100%;
+  max-width: 400px;
+}
