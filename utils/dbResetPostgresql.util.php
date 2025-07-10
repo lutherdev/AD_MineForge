@@ -1,5 +1,10 @@
 <?php
 declare(strict_types=1);
+
+if (!defined('BASE_PATH')) {
+    define('BASE_PATH', dirname(_DIR_));
+}
+
 require_once BASE_PATH . '/bootstrap.php';
 require_once UTILS_PATH . '/envSetter.util.php';
 
