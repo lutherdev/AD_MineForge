@@ -1,7 +1,13 @@
+body {
+    padding-top: 80x;
+}
+
 .navbar {
     width: 100%;
     padding: 1rem 2rem;
     z-index: 1000;
+    left: 0;
+    top: 0;
     position: fixed;
     background: transparent;
 }
