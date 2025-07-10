@@ -14,3 +14,26 @@
     padding: 0 1rem;
 }
 
+.footer-column {
+    min-width: 150px;
+}
+
+.footer-column h3 {
+    color: #d4af37;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin: 0.5rem 0;
+}
+
+.footer-column a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
