@@ -11,3 +11,25 @@
         </div>
     </div>
 </main>
+
+
+<div class="comment">
+    <h1>Send a Raven</h1>
+    <form action="/handlers/contact.handler.php" method="POST">
+        <div class="box-name">
+            <input type="text" name="name" placeholder="Enter thy Name" required>
+        </div>
+        <div class="box-name">
+            <input type="text" name="username" placeholder="Enter thy username" required>
+        </div>
+        <div class="box-email">
+            <input type="email" name="email" placeholder="Enter thy Address" required>
+        </div>
+        <div class="box-message">
+            <textarea name="message" placeholder="State thy Message" required></textarea>
+        </div>
+        <div class="box-button">
+            <button type="submit">Dispatch Scroll</button>
+        </div>
+    </form>
+</div>
