@@ -9,9 +9,14 @@ if ($uri === "") {
     $folder = $uri;
 }
 
+if (!file_exists(PAGES_PATH . "/{$folder}/index.php")) {
+    $folder = "404";
+}
+
 $pageFile = PAGES_PATH . "/{$folder}/index.php";
 $pageCssPath = "pages/{$folder}/assets/css/{$folder}.css";
 $title = ucfirst($folder);
+
 
 renderMainLayout(function () use ($pageFile) {
     if (file_exists($pageFile)) {
