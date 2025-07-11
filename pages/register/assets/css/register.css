@@ -53,6 +53,14 @@ body {
   font-family: 'Georgia',serif;
 }
 
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus,
+.input-group select:focus {
+  border-bottom-color: #d4af37;
+  background-color: rgba(255,255,255,0.9);
+  outline: none;
+}
+
 .input-group select {
     appearance: none;
     -webkit-appearance: none;
