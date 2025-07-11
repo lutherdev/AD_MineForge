@@ -21,6 +21,14 @@ body {
   max-width: 400px;
 }
 
+.register-box h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  color: #d4af37;
+  text-shadow: 1px 1px 2px #1a1a1a;
+}
+
 .input-group input,
 .input-group select {
   padding: 0.75rem;
