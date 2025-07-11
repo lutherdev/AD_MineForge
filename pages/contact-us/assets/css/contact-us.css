@@ -75,3 +75,14 @@ input[type="text"], input[type="email"], textarea {
   color: #2d1b00;
   font-family: 'MedievalSharp', cursive;
 }
+
+.comment input::placeholder,
+.comment textarea::placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+
+textarea {
+  height: 150px;
+}
