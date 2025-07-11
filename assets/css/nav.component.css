@@ -113,3 +113,84 @@ body {
     background: rgba(212,175,55,0.2);
     color: #d4af37;
 }
+
+/* Add these new styles at the bottom of your existing CSS */
+
+/* Burger menu styles */
+.burger-menu {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.burger-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #f0e6d2;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+    
+    .navbar-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 80px);
+        background: rgba(30, 15, 15, 0.98);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        transition: left 0.3s ease;
+        z-index: 1000;
+        gap: 1rem;
+    }
+    
+    .navbar-menu.active {
+        left: 0;
+    }
+    
+    .navbar-item {
+        width: 100%;
+        padding: 1rem 0;
+    }
+    
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        display: none;
+    }
+    
+    .navbar-item.dropdown:hover .dropdown-content,
+    .navbar-item.dropdown.active .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .dropdown-title::after {
+        content: "+";
+        font-size: 1.2rem;
+    }
+    
+    .navbar-item.dropdown.active .dropdown-title::after {
+        content: "-";
+    }
+}
