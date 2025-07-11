@@ -37,3 +37,9 @@ h1 {
     color: #4b2e0b;
     text-shadow: 1px 1px #f1d6a3;
 }
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
