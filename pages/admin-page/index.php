@@ -1,5 +1,10 @@
 <?php
 require_once BASE_PATH . '/bootstrap.php';
+
+if ($_SESSION['user']['role'] !== 'admin') {
+    header('Location: /');
+    exit;
+}
 ?>
 <link rel="stylesheet" href="/pages/admin-page/assets/css/admin-page.css">
 <main class="admin-page">
