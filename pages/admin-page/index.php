@@ -10,22 +10,22 @@ if ($_SESSION['user']['role'] !== 'admin') {
 <main class="admin-page">
     <div class="admin-container">
         <div class="admin-grid">
-            <div class="admin-card" onclick="location.href='create-item.php'">
+            <div class="admin-card" onclick="location.href='add-item.php'">
                 <h3>Create Item</h3>
                 <div class="admin-icon">⛏</div>
             </div>
 
-            <div class="admin-card" onclick="location.href='read-item.php'">
+            <div class="admin-card" onclick="location.href='view-item.php'">
                 <h3>Read Item</h3>
                 <div class="admin-icon">📜</div>
             </div>
 
-            <div class="admin-card" onclick="location.href='update-item.php'">
+            <div class="admin-card" onclick="location.href='edit-item.php'">
                 <h3>Update Item</h3>
                 <div class="admin-icon">🛠</div>
             </div>
 
-            <div class="admin-card" onclick="location.href='delete-item.php'">
+            <div class="admin-card" onclick="location.href='remove-item.php'">
                 <h3>Delete Item</h3>
                 <div class="admin-icon">💀</div>
             </div>
