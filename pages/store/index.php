@@ -1,21 +1,49 @@
-<?php
-require_once STATICDATAS_PATH . '/dummies/items.staticData.php';
-?>
+<?php require_once STATICDATAS_PATH . '/dummies/items.staticData.php'; ?>
+
+<!-- Mobile Category Toggle Button -->
+<button id="mobile-category-toggle" class="mobile-category-button">☰ Categories</button>
+
+<!-- Mobile Cart Toggle Button -->
+<button id="mobile-cart-toggle" class="mobile-cart-button">🛒 Cart</button>
+
+<!-- Mobile Category Popup -->
+<div id="mobile-category-popup" class="mobile-category-popup hidden">
+  <div class="category-popup-content">
+    <aside class="category">
+      <div class="store-filters">
+        <button class="menu-btn active" data-category="all">All</button>
+        <button class="menu-btn" data-category="ore">Ore</button>
+        <button class="menu-btn" data-category="tools">Tools</button>
+        <button class="menu-btn" data-category="gear">Gear</button>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- Mobile Cart Popup -->
+<div id="mobile-cart-popup" class="mobile-cart-popup hidden">
+  <div class="cart-popup-content">
+    <aside class="cart-box">
+      <h2>Cart</h2>
+      <ul id="cart-items-mobile"></ul>
+      <div class="total">Total: ₱<span id="cart-total-mobile">0</span></div>
+      <div class='cart-buttons'>
+        <div class='btn-cancel'><button id="checkout-btn-mobile">CHECKOUT</button></div>
+        <div class='btn-cancel'><button id="cancel-btn-mobile">CANCEL</button></div>
+      </div>
+    </aside>
+  </div>
+</div>
 
 <section class="store-container" id="inventory">
   <div class="store-header">
     <h1>Miner's Ware</h1>
-    <div class="store-filters">
-      <button class="menu-btn active" data-category="all">All</button>
-      <button class="menu-btn" data-category="ore">Ore</button>
-      <button class="menu-btn" data-category="tools">Tools</button>
-      <button class="menu-btn" data-category="gear">Gear</button>
-    </div>
   </div>
 
   <div class="store-main">
     <div class="sidebar">
-      <div class="cart-image-wrapper">
+      <!-- Desktop Cart -->
+      <div class="cart-image-wrapper desktop-cart">
         <aside class="cart-box">
           <h2>Cart</h2>
           <ul id="cart-items"></ul>
@@ -27,14 +55,15 @@ require_once STATICDATAS_PATH . '/dummies/items.staticData.php';
         </aside>
       </div>
 
-      <div class="cart-image-wrapper">
-        <aside class="cart-box2">
-          <h2>SAMPLE BOX</h2>
-          <ul>
-            <li>Miner's Helmet<span>₱150</span></li>
-            <li>Gold Nugget<span>₱120</span></li>
-          </ul>
-          <div class="total">Total: ₱270</div>
+      <!-- Desktop Category -->
+      <div class="cart-image-wrapper desktop-category">
+        <aside class="category">
+          <div class="store-filters">
+            <button class="menu-btn active" data-category="all">All</button>
+            <button class="menu-btn" data-category="ore">Ore</button>
+            <button class="menu-btn" data-category="tools">Tools</button>
+            <button class="menu-btn" data-category="gear">Gear</button>
+          </div>
         </aside>
       </div>
     </div>
@@ -58,3 +87,5 @@ require_once STATICDATAS_PATH . '/dummies/items.staticData.php';
     </div>
   </div>
 </section>
+
+<script src="/pages/store/assets/js/store.js"></script>
