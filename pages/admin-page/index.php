@@ -9,6 +9,21 @@ require_once BASE_PATH . '/bootstrap.php';
                 <h3>Create Item</h3>
                 <div class="admin-icon">⛏</div>
             </div>
+
+            <div class="admin-card" onclick="location.href='read.php'">
+                <h3>Read Item</h3>
+                <div class="admin-icon">📜</div>
+            </div>
+
+            <div class="admin-card" onclick="location.href='update.php'">
+                <h3>Update Item</h3>
+                <div class="admin-icon">🛠</div>
+            </div>
+
+            <div class="admin-card" onclick="location.href='delete.php'">
+                <h3>Delete Item</h3>
+                <div class="admin-icon">💀</div>
+            </div>
         </div>
     </div>
 </main>
