@@ -29,12 +29,15 @@ body {
   text-shadow: 1px 1px 2px #1a1a1a;
 }
 
-.input-group input,
-.input-group select {
-  padding: 0.75rem;
-  border: none;
-  border-bottom: 2px solid #5c4d3c;
-  background-color: rgba(255,255,255,0.7);
+.input-group {
+  margin-bottom: 1.25rem;
+}
+
+.input-group {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+  font-weight: bold;
 }
 
 button[type="submit"] {
