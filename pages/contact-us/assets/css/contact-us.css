@@ -40,3 +40,9 @@ body {
   color: #3e240c;
   text-shadow: 1px 1px #f1d6a3;
 }
+
+.medieval-map img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
