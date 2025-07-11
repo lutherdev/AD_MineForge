@@ -18,27 +18,28 @@ $error = $_GET['error'] ?? '';
       </div>
 
       <div class="input-group">
-        <label>Firstname: </label>
+        <label>First Name: </label>
         <input type="text" name="firstname" required>
       </div>
 
       <div class="input-group">
-        <label>Lastname: </label>
+        <label>Last Name: </label>
         <input type="text" name="lastname" required>
-      </div>
-
-      <div class="input-group">
-        <label>Role: </label>
-        <select name="role" required>
-          <option value="">--Select Role--</option>
-          <option value="customer">Customer</option>
-          <option value="admin">Admin</option>
-        </select>
       </div>
 
       <div class="input-group">
         <label>Wallet: </label>
         <input type="text" name="wallet" required>
+      </div>
+
+      <div class="input-group">
+        <label>City: </label>
+        <input type="text" name="city" required>
+      </div>
+
+      <div class="input-group">
+        <label>Province: </label>
+        <input type="text" name="province" required>
       </div>
 
         <input type="hidden" name="action" value="register">
