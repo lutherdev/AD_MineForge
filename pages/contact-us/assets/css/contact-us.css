@@ -16,3 +16,18 @@ body {
   gap: 40px;
   flex-wrap: wrap;
 }
+
+.location, .comment {
+  flex: 1;
+  padding: 40px 20px;
+  background-image: url('../img/agedpaper.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+}
