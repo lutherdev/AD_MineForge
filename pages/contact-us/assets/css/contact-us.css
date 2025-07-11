@@ -57,3 +57,21 @@ body {
   font-weight: bold;
   color: #3e240c;
 }
+
+.box-name, .box-email, .box-message {
+  margin-bottom: 15px;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #36210c;
+  font-size: 14px;
+  background-color: #927641;
+  color: #2d1b00;
+  font-family: 'MedievalSharp', cursive;
+}
