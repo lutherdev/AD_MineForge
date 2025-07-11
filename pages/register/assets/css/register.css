@@ -16,4 +16,10 @@ body {
   border: 2px solid #d4af37;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
-
+.input-group input,
+.input-group select {
+  padding: 0.75rem;
+  border: none;
+  border-bottom: 2px solid #5c4d3c;
+  background-color: rgba(255,255,255,0.7);
+}
