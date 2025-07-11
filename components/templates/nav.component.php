@@ -15,7 +15,7 @@
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
-                <a href="homepage">
+                <a href="home-page">
                 <img src ="<?php echo htmlspecialchars($logo); ?>"
                      alt ="<?php echo htmlspecialchars($alt_logo); ?>"
                      class="logo-img">
@@ -23,6 +23,12 @@
                 </a>
             </div>
 
+                <button class="burger-menu" aria-label="Toggle navigation">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                
             <div class="navbar-menu">
                 <?php foreach ($navbar_items as $title => $url): ?>
                     <?php if (is_array($url)): ?>
