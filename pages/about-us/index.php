@@ -22,5 +22,12 @@ $team_members = require STATICDATAS_PATH . '/dummies/aboutUs.staticData.php';
         </div>
     </section>
 
-    
+    <section class="about-service">
+        <div class="forge-container">
+            <h2 class="forge-title">Our Work</h2>
+            <div class="ore-divider"></div>
+            <p class="forge-text">MineForge specializes in ethically sourced metals and minerals, supplying Baldur's Gate's finest smiths and builders. Our high-grade iron and steel form the backbone of the city's weapons and structures, while carefully selected gemstones—some with intriguing natural properties—are prized by jewelers and arcanists alike. Using time-honored techniques blending dwarven precision with human innovation, we extract quality stone for the city's growing architecture, though some of our deeper operations require... particularly specialized expertise.</p>
+        </div>
+    </section>
+
 </main>
