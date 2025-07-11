@@ -28,3 +28,18 @@
   <label>Lastname: </label>
   <input type="text" name="lastname" required>
 </div>
+
+
+<div class="input-group">
+  <label>Role: </label>
+  <select name="role" required>
+    <option value="">--Select Role--</option>
+    <option value="customer">Customer</option>
+    <option value="admin">Admin</option>
+  </select>
+</div>
+
+<div class="input-group">
+  <label>Wallet: </label>
+  <input type="text" name="wallet" required>
+</div>
