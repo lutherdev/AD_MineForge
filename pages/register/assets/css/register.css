@@ -23,3 +23,15 @@ body {
   border-bottom: 2px solid #5c4d3c;
   background-color: rgba(255,255,255,0.7);
 }
+
+button[type="submit"] {
+  background: #d4af37;
+  color: #1a1a1a;
+  text-transform: uppercase;
+}
+
+.error {
+  color: #c0392b;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem;
+}
