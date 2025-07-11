@@ -23,6 +23,12 @@
                 </a>
             </div>
 
+                <button class="burger-menu" aria-label="Toggle navigation">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                
             <div class="navbar-menu">
                 <?php foreach ($navbar_items as $title => $url): ?>
                     <?php if (is_array($url)): ?>
