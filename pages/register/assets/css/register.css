@@ -72,8 +72,18 @@ body {
 }
 
 button[type="submit"] {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 1rem;
   background: #d4af37;
   color: #1a1a1a;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Book Antiqua', serif;
   text-transform: uppercase;
 }
 
