@@ -163,9 +163,6 @@ body {
         padding: 1rem 0;
     }
 
-        .navbar-item.dropdown {
-        position: relative;
-    }
     
     .dropdown-content {
         position: absolute;
@@ -191,6 +188,7 @@ body {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        margin-left: -1rem;
     }
     
     .dropdown-title::after {
