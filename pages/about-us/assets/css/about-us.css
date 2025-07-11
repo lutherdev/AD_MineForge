@@ -136,3 +136,55 @@ body {
     border-top: 1px solid #d4af37;
     border-bottom: 1px solid #d4af37;
 }
+
+.forge-container {
+    background: linear-gradient(rgba(64, 28, 28, 0.9), rgba(65, 43, 43, 0.389)),
+    url('../img/stone_bg.png');
+    background-size: cover;
+    border: 3px #d4af37;
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0 20px rgba(212,175,55,0.2);
+}
+
+.ore-divider {
+    height: 2px;
+    background: linear-gradient(to right,
+    transparent,
+    #d4af37 20%,
+    #a52a2a 50%,
+    #d4af37 80%,
+    transparent);
+    margin: 1rem auto 2rem;
+    width: 60%;
+}
+
+.forge-title {
+    font-family: 'MedievalSharp', cursive;
+    color: #d4af37;
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.forge-text {
+    color: #f0e6d2;
+    line-height: 1.8;
+    text-align: justify;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.about-service {
+    padding: 2rem;
+    background: linear-gradient(rgba(64, 28, 28, 0.9), rgba(41, 29, 29, 0.818))
+    ,url('../img/lava.jpg');
+    background-size: cover;
+}
+
+.about-service p {
+    max-width: 800px;
+}
