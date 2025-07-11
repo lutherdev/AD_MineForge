@@ -135,6 +135,17 @@ body {
 /* Responsive styles */
 @media (max-width: 768px) {
 
+        .navbar {
+        background: rgba(30, 15, 15, 0.95);
+        backdrop-filter: none;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        border-bottom: 2px solid #d4af37;
+    }
+
+    .navbar.scrolled {
+        background: rgba(30, 15, 15, 0.95);
+    }
+
     .burger-menu {
         display: block;
     }
