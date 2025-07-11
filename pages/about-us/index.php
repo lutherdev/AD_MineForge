@@ -1,6 +1,6 @@
 <?php
 require_once 'bootstrap.php';
-$team_members = require STATICDATAS_PATH . '/dummies/aboutUs.staticData.php'; 
+$team_members = require STATICDATAS_PATH . '/dummies/about-us.staticData.php'; 
 ?>
 
 <main class="aboutus-container">
