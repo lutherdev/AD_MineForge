@@ -1,13 +1,18 @@
 body {
-  margin: 0;
+  background: linear-gradient(rgba(11,6,6,0.9), rgba(34, 16, 16, 0.9)),
+  url('../img/cave_bg.jpg') center/cover;
   font-family: 'Book Antiqua', serif;
+  margin: 0;
   padding: 0;
+  color: #e0e0e0;
 }
+
 .register-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 1rem;
 }
 
 .register-box {
@@ -20,6 +25,7 @@ body {
   width: 100%;
   max-width: 400px;
 }
+
 
 .register-box h2 {
   text-align: center;
@@ -53,14 +59,6 @@ body {
   font-family: 'Georgia',serif;
 }
 
-.input-group input[type="text"]:focus,
-.input-group input[type="password"]:focus,
-.input-group select:focus {
-  border-bottom-color: #d4af37;
-  background-color: rgba(255,255,255,0.9);
-  outline: none;
-}
-
 .input-group select {
     appearance: none;
     -webkit-appearance: none;
@@ -69,6 +67,14 @@ body {
     background-position: right 0.75rem center;
     background-size: 12px;
     padding-right: 2rem;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus,
+.input-group select:focus {
+  border-bottom-color: #d4af37;
+  background-color: rgba(255,255,255,0.9);
+  outline: none;
 }
 
 button[type="submit"] {
