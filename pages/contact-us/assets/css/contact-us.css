@@ -82,7 +82,31 @@ input[type="text"], input[type="email"], textarea {
     opacity: 1;
 }
 
-
 textarea {
   height: 150px;
+}
+
+.box-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: fit-content;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.box-button button {
+  background-color: #55360e;
+  color: #f8e6c2;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'MedievalSharp', cursive;
+  box-shadow: 0 0 10px rgba(255, 207, 120, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
