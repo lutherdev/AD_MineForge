@@ -30,4 +30,24 @@ $team_members = require STATICDATAS_PATH . '/dummies/aboutUs.staticData.php';
         </div>
     </section>
 
+    <section class="about-team">
+        <div class="team-header">
+            <h2 class="team-title">DELVERS OF THE DEEP</h2>
+            <div class="pickaxe-divider">⚒⚒⚒</div>
+        </div>
+        <div class="miner-grid">
+            <?php foreach ($team_members as $member) : ?>
+                <div class="miner-card">
+                    <div class="miner-portrait">
+                        <img src="<?= htmlspecialchars($member['image']) ?>" 
+                            alt="<?= htmlspecialchars($member['name']) ?>" 
+                            class="miner-photo">
+                        <div class="miner-frame"></div>
+                    </div>
+                    <h3 class="miner-name"><?= htmlspecialchars($member['name']) ?></h3>
+                    <p class="miner-role"><?= htmlspecialchars($member['role']) ?></p>
+                    </div>
+            <?php endforeach; ?>
+        </div>
+    </section>
 </main>
