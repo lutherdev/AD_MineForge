@@ -40,6 +40,19 @@ body {
   font-weight: bold;
 }
 
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-bottom: 2px solid #5c4d3c;
+  background-color: rgba(255,255,255,0.7);
+  font-size: 1rem;
+  transition: all 0.3s;
+  font-family: 'Georgia',serif;
+}
+
 button[type="submit"] {
   background: #d4af37;
   color: #1a1a1a;
