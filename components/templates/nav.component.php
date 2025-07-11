@@ -15,7 +15,7 @@
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
-                <a href="homepage">
+                <a href="home-page">
                 <img src ="<?php echo htmlspecialchars($logo); ?>"
                      alt ="<?php echo htmlspecialchars($alt_logo); ?>"
                      class="logo-img">
