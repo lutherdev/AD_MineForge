@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 120vh;
+  min-height: 170vh;
   padding: 1rem;
 }
 
@@ -96,4 +96,64 @@ button[type="submit"] {
   padding: 0.5rem;
   border-radius: 3px;
   font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .register-container {
+    padding: 2rem 1rem;
+  }
+
+  .register-box {
+    max-width: 90%;
+    padding: 2rem;
+  }
+
+  .register-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .input-group input[type="text"],
+  .input-group input[type="password"] {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .register-box {
+    padding: 1.5rem;
+  }
+
+  .register-container{
+    min-height: 155vh;
+  }
+
+  .register-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .input-group label {
+    font-size: 0.95rem;
+  }
+
+  .input-group input[type="text"],
+  .input-group input[type="password"] {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  button[type="submit"] {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  .error {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
 }
