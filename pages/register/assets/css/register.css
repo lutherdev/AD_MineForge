@@ -9,3 +9,11 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+
+.register-box {
+  background: linear-gradient(rgba(242,227,197,0.9), rgba(242,227,197,0.9)),
+  url('../img/parchment-bg.jpg') center/cover;
+  border: 2px solid #d4af37;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
