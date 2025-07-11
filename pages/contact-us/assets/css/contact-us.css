@@ -13,29 +13,29 @@ body {
 .contactus-container {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
   flex-wrap: wrap;
+  padding-top: 2rem;
 }
 
 .location, .comment {
   flex: 1;
   padding: 40px 20px;
   background-image: url('../img/agedpaper.png');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 70px;
+  min-width: 45%;
 }
 
 .location h1, .comment h1 {
   text-align: center;
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: 'MedievalSharp', cursive;
   color: #3e240c;
   text-shadow: 1px 1px #f1d6a3;
@@ -44,7 +44,12 @@ body {
 .medieval-map img {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.contact-info{
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .contact-info p {
@@ -55,11 +60,11 @@ body {
 
 .contact-info .label {
   font-weight: bold;
-  color: #3e240c;
+  color: #0e0701;
 }
 
 .box-name, .box-email, .box-message {
-  margin-bottom: 15px;
+  margin-bottom: 7px;
   background-color: transparent;
   padding: 10px;
   border-radius: 5px;
@@ -82,8 +87,9 @@ input[type="text"], input[type="email"], textarea {
     opacity: 1;
 }
 
+
 textarea {
-  height: 150px;
+  height: 120px;
 }
 
 .box-button {
