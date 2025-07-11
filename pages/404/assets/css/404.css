@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+.main-outer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.outer-container {
+    font-family: 'MedievalSharp', cursive;
+    background-size: contain;
+    background: url(/pages/404/assets/img/longpaper.png) no-repeat center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    min-height: 100vh;
+    min-width: 80%;
+    padding: 35px;
+}
+
+.knight-img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
