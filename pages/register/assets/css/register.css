@@ -87,6 +87,12 @@ button[type="submit"] {
   text-transform: uppercase;
 }
 
+.register-box button:hover {
+  background: #f1c40f;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212,175,55,0.4);
+}
+
 .error {
   color: #c0392b;
   background: rgba(255, 255, 255, 0.7);
