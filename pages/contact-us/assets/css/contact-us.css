@@ -5,3 +5,14 @@ body {
   background-color: #1b1b1b;
   color: #2d1b00;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.contactus-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
