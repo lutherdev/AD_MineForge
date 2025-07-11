@@ -42,6 +42,11 @@ $error = $_GET['error'] ?? '';
         <input type="text" name="province" required>
       </div>
 
+      <div class="input-group">
+        <label>Street: </label>
+        <input type="text" name="street" required>
+      </div>
+
         <input type="hidden" name="action" value="register">
         <button type="submit">Register</button>
 
