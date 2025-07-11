@@ -43,3 +43,7 @@
   <label>Wallet: </label>
   <input type="text" name="wallet" required>
 </div>
+
+
+<input type="hidden" name="action" value="register">
+<button type="submit">Register</button>
